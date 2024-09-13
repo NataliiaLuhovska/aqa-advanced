@@ -1,4 +1,4 @@
-let averageGrade = 85;
+let averageGrade = 200;
 
 if (averageGrade < 60) {
   console.log("Unsatisfactory");
