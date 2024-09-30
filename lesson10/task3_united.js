@@ -10,3 +10,21 @@ console.log(book1.printInfo());
 console.log(book2.printInfo());
 console.log(book3.printInfo());
 console.log(ebook1.printInfo());
+
+// Виклик статичного методу для пошуку найдавнішої книги
+const books = [book1, book2, book3, ebook1];
+
+const oldestBook = Book.findOldestBook(books);
+
+if (oldestBook) {
+  console.log("The oldest book is:");
+  console.log(oldestBook.printInfo());
+} else {
+  console.error("Cannot find the oldest book.");
+}
+
+// Виклик статичного методу для фільтрації тільки електронних книг
+const ebooks = EBook.filterEBooks(books);
+
+console.log("Electronic books are:");
+ebooks.forEach((ebook) => console.log(ebook.printInfo()));
