@@ -6,7 +6,7 @@
 Створіть новий масив, де кожне значення це елемент вихідного масиву помножений на значення індексу відповідного елемента початкового масиву.
 Виведіть новий масив на консоль. */
 
-const myArray = [1, 2, 3, 4, 5];
-const newArray = myArray.map((value, index) => value * index);
+const myArray = [1, 2, 3, 4, 5]
+const newArray = myArray.map((value, index) => value * index)
 
-console.log(newArray);
+console.log(newArray)

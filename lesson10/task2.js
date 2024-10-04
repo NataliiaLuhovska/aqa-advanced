@@ -6,46 +6,46 @@
 Створіть інстанс(екземпляр) класу EBook та викличте метод printInfo 
 */
 
-import Book from "./task1.js";
+import Book from './task1.js'
 
 export default class EBook extends Book {
-  constructor(name, author, year, fileFormat) {
-    super(name, author, year);
-    this.fileFormat = fileFormat;
-  }
-
-  get fileFormat() {
-    return this._fileFormat;
-  }
-
-  set fileFormat(value) {
-    const allowedFormats = ["PDF", "DOC", "TXT"];
-    if (allowedFormats.includes(value.toUpperCase())) {
-      this._fileFormat = value;
-    } else {
-      console.error(
-        `File format can be one of the following: ${allowedFormats.join(", ")}`
-      );
-    }
-  }
-
-  printInfo() {
-    return `${super.printInfo()}, fileFormat: ${this.fileFormat}`;
-  }
-
-  // Статичний метод для створення EBook з екземпляра класу Book
-  static fromBook(book, fileFormat) {
-    if (!(book instanceof Book)) {
-      console.error("The provided value is not an example of Book.");
-      return null;
+    constructor(name, author, year, fileFormat) {
+        super(name, author, year)
+        this.fileFormat = fileFormat
     }
 
-    // Повертаємо новий екземпляр EBook на основі екземпляра Book
-    return new EBook(book.name, book.author, book.year, fileFormat);
-  }
+    get fileFormat() {
+        return this._fileFormat
+    }
 
-  // Статичний метод для фільтрації тільки електронних книг
-  static filterEBooks(books) {
-    return books.filter((book) => book instanceof EBook);
-  }
+    set fileFormat(value) {
+        const allowedFormats = ['PDF', 'DOC', 'TXT']
+        if (allowedFormats.includes(value.toUpperCase())) {
+            this._fileFormat = value
+        } else {
+            console.error(
+                `File format can be one of the following: ${allowedFormats.join(', ')}`
+            )
+        }
+    }
+
+    printInfo() {
+        return `${super.printInfo()}, fileFormat: ${this.fileFormat}`
+    }
+
+    // Статичний метод для створення EBook з екземпляра класу Book
+    static fromBook(book, fileFormat) {
+        if (!(book instanceof Book)) {
+            console.error('The provided value is not an example of Book.')
+            return null
+        }
+
+        // Повертаємо новий екземпляр EBook на основі екземпляра Book
+        return new EBook(book.name, book.author, book.year, fileFormat)
+    }
+
+    // Статичний метод для фільтрації тільки електронних книг
+    static filterEBooks(books) {
+        return books.filter((book) => book instanceof EBook)
+    }
 }

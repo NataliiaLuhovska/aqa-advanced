@@ -1,15 +1,38 @@
 {
-  "name": "aqa-advanced",
-  "version": "1.0.0",
-  "description": "nlu does test task 2\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[Chome \u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "nlu",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "^5.3.0"
-  }
+    "name": "aqa-advanced",
+    "version": "1.0.0",
+    "description": "nlu does test task home",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"No tests defined\"",
+        "prettier": "prettier . --check",
+        "prettier:fix": "prettier . --write",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix",
+        "prepare": "husky"
+    },
+    "author": "nlu",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.3.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.11.1",
+        "eslint": "^9.11.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.10.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^15.2.10",
+        "prettier": "3.3.3",
+        "typescript-eslint": "^8.8.0"
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "prettier --write"
+        ]
+    }
 }

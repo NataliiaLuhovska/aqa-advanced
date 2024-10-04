@@ -7,10 +7,10 @@
    - courses: масив, представляє список курсів, які він вивчає (наприклад, ["Математика", "Історія", "Програмування"]).
 Виведіть об'єкт student в консоль. */
 
-const student = {};
-student.firstName = "Nataliia";
-student.lastName = "Luhovska";
-student.age = 30;
-student.courses = ["maths", "history", "programming"];
+const student = {}
+student.firstName = 'Nataliia'
+student.lastName = 'Luhovska'
+student.age = 30
+student.courses = ['maths', 'history', 'programming']
 
-console.log(student);
+console.log(student)

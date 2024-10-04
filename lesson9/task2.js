@@ -7,12 +7,12 @@ year: число, представляє рік видання книги.
 Виведіть деструктуризовані змінні в консоль */
 
 const book = {
-  title: "JavaScript for Kids",
-  author: "Nick Morgan",
-  year: 2015,
-};
+    title: 'JavaScript for Kids',
+    author: 'Nick Morgan',
+    year: 2015,
+}
 
-const { title, author } = book;
+const { title, author } = book
 
-console.log(title);
-console.log(author);
+console.log(title)
+console.log(author)

@@ -7,22 +7,22 @@
 //function declaration
 
 function square(width, height) {
-  return width * height;
+    return width * height
 }
-console.log(square(20, 555));
+console.log(square(20, 555))
 
 //function expression
 const squareExp = function (width, height) {
-  return width * height;
-};
-console.log(squareExp(20, 555));
+    return width * height
+}
+console.log(squareExp(20, 555))
 
 //arrow function
 const squareArr = (width, height) => {
-  return width * height;
-};
-console.log(squareArr(20, 555));
+    return width * height
+}
+console.log(squareArr(20, 555))
 
 //short
-const squareCon = (width, height) => width * height;
-console.log(squareCon(20, 555));
+const squareCon = (width, height) => width * height
+console.log(squareCon(20, 555))

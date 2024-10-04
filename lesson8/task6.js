@@ -6,11 +6,11 @@
 Відсортуйте створений масив (від меншого до більшого)
 Виведіть обидва масиви в консоль*/
 
-const numbersList = [1, 10, 14, 2, 4, 5, 43, 34];
-const numbersListCopy = numbersList.slice();
+const numbersList = [1, 10, 14, 2, 4, 5, 43, 34]
+const numbersListCopy = numbersList.slice()
 
 // Відсортовуємо копію масиву по зростанню
-const numbersListSorted = numbersListCopy.sort((a, b) => a - b);
+const numbersListSorted = numbersListCopy.sort((a, b) => a - b)
 
-console.log(numbersList);
-console.log(numbersListSorted);
+console.log(numbersList)
+console.log(numbersListSorted)

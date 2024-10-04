@@ -6,8 +6,8 @@
 (чи є особа дорослою) в консоль для кожного випадку.*/
 
 function checkAge(age) {
-  return age >= 18;
+    return age >= 18
 }
-console.log(checkAge(15));
-console.log(checkAge(18));
-console.log(checkAge(25));
+console.log(checkAge(15))
+console.log(checkAge(18))
+console.log(checkAge(25))

@@ -12,31 +12,31 @@
 виведіть повідомлення "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла.*/
 
 function divide(numerator, denominator) {
-  if (typeof numerator !== "number" || typeof denominator !== "number") {
-    throw new Error("Arguments should be numbers");
-  }
+    if (typeof numerator !== 'number' || typeof denominator !== 'number') {
+        throw new Error('Arguments should be numbers')
+    }
 
-  if (denominator === 0) {
-    throw new Error("The divisor cannot be zero");
-  }
+    if (denominator === 0) {
+        throw new Error('The divisor cannot be zero')
+    }
 
-  return numerator / denominator;
+    return numerator / denominator
 }
 
 function testDivide(numerator, denominator) {
-  try {
-    const result = divide(numerator, denominator);
-    console.log(`Result: ${result}`);
-  } catch (error) {
-    console.log(`Error: ${error.message}`);
-  } finally {
-    // Виведення повідомлення в будь-якому випадку
-    console.log("Work is finished");
-  }
+    try {
+        const result = divide(numerator, denominator)
+        console.log(`Result: ${result}`)
+    } catch (error) {
+        console.log(`Error: ${error.message}`)
+    } finally {
+        // Виведення повідомлення в будь-якому випадку
+        console.log('Work is finished')
+    }
 }
 
 // Викликаємо функцію з різними значеннями
-testDivide(10, 2);
-testDivide(10, 0);
-testDivide("10", 2);
-testDivide(10, "a");
+testDivide(10, 2)
+testDivide(10, 0)
+testDivide('10', 2)
+testDivide(10, 'a')

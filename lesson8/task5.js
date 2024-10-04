@@ -5,8 +5,8 @@
 Створіть новий масив, який містить всі елементи з обох вихідних масивів.
 Виведіть отриманий об'єднаний масив на консоль.*/
 
-const firstArray = ["red", "green", "orange"];
-const secondArray = ["blue", "purple", "pink"];
-const thirdArray = firstArray.concat(secondArray);
+const firstArray = ['red', 'green', 'orange']
+const secondArray = ['blue', 'purple', 'pink']
+const thirdArray = firstArray.concat(secondArray)
 
-console.log(thirdArray);
+console.log(thirdArray)

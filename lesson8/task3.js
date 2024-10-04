@@ -8,9 +8,9 @@
 Використовуючи метод reduce, обчисліть суму всіх елементів масиву.
 Виведіть отриману суму на консоль.*/
 
-const myArray = [10, 20, 30, 40, 50];
+const myArray = [10, 20, 30, 40, 50]
 const sum = myArray.reduce(
-  (accumulator, currentValue) => accumulator + currentValue
-);
+    (accumulator, currentValue) => accumulator + currentValue
+)
 
-console.log(sum);
+console.log(sum)

@@ -3,9 +3,9 @@
 Функція повинна вивести в консоль переданий текст через вказану кількість мілісекунд */
 
 function showText(text, miliseconds) {
-  setTimeout(() => {
-    console.log(text);
-  }, miliseconds);
+    setTimeout(() => {
+        console.log(text)
+    }, miliseconds)
 }
 
-showText("Hello Team", 2000);
+showText('Hello Team', 2000)

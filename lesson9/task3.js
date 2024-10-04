@@ -14,17 +14,17 @@
 Виведіть об'єкт car3 в консоль.*/
 
 const car1 = {
-  brand: "Honda",
-  model: "Accord",
-  year: 2000,
-};
+    brand: 'Honda',
+    model: 'Accord',
+    year: 2000,
+}
 
 const car2 = {
-  brand: "Volkswagen",
-  model: "Tiguan",
-  owner: "Ivan",
-};
+    brand: 'Volkswagen',
+    model: 'Tiguan',
+    owner: 'Ivan',
+}
 
-const car3 = { ...car1, ...car2 };
+const car3 = { ...car1, ...car2 }
 
-console.log(car3);
+console.log(car3)

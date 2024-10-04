@@ -6,9 +6,9 @@
 Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.  */
 
 function myFunc(num) {
-  console.log(num);
-  if (num > 0) {
-    myFunc(num - 1);
-  }
+    console.log(num)
+    if (num > 0) {
+        myFunc(num - 1)
+    }
 }
-myFunc(5);
+myFunc(5)

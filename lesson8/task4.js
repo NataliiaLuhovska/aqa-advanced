@@ -5,7 +5,7 @@
 Cтворіть новий масив, який міститиме лише парні числа.
 Виведіть отриманий масив парних чисел на консоль.*/
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const EvenNumber = array.filter((number) => number % 2 === 0);
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const EvenNumber = array.filter((number) => number % 2 === 0)
 
-console.log(EvenNumber);
+console.log(EvenNumber)
