@@ -1,5 +1,4 @@
-# Ігноруйте зміну рядкових закінчень для node_modules
-node_modules/* text eol=lf
-
-# Або застосуйте до всіх файлів у проекті
 * text=auto
+*.js text eol=lf
+*.ts text eol=lf
+*.md text eol=lf
