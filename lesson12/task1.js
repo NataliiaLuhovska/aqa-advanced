@@ -7,3 +7,5 @@ function sayHello(name) {
 }
 
 sayHello('Alice')
+
+/* Додала файли в ігор*/
