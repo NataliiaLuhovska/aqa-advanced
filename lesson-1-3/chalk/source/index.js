@@ -1,6 +1,6 @@
 import ansiStyles from '#ansi-styles';
 import supportsColor from '#supports-color';
-import { // eslint-disable-line import/order
+import { 
 	stringReplaceAll,
 	stringEncaseCRLFWithFirstIndex,
 } from './utilities.js';
