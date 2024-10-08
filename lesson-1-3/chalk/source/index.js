@@ -1,6 +1,6 @@
 import ansiStyles from '#ansi-styles';
 import supportsColor from '#supports-color';
-import { // eslint-disable-line import/order
+import { 
 	stringReplaceAll,
 	stringEncaseCRLFWithFirstIndex,
 } from './utilities.js';
@@ -33,7 +33,7 @@ const applyOptions = (object, options = {}) => {
 
 export class Chalk {
 	constructor(options) {
-		// eslint-disable-next-line no-constructor-return
+		 
 		return chalkFactory(options);
 	}
 }
@@ -151,7 +151,7 @@ const createStyler = (open, close, parent) => {
 
 const createBuilder = (self, _styler, _isEmpty) => {
 	// Single argument is hot path, implicit coercion is faster than anything
-	// eslint-disable-next-line no-implicit-coercion
+	 
 	const builder = (...arguments_) => applyStyle(builder, (arguments_.length === 1) ? ('' + arguments_[0]) : arguments_.join(' '));
 
 	// We alter the prototype because we must return a function, but there is

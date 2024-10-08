@@ -147,11 +147,11 @@ function assembleStyles() {
 				const integer = Number.parseInt(colorString, 16);
 
 				return [
-					/* eslint-disable no-bitwise */
+					 
 					(integer >> 16) & 0xFF,
 					(integer >> 8) & 0xFF,
 					integer & 0xFF,
-					/* eslint-enable no-bitwise */
+					 
 				];
 			},
 			enumerable: false,
@@ -194,7 +194,7 @@ function assembleStyles() {
 					return 30;
 				}
 
-				// eslint-disable-next-line no-bitwise
+				 
 				let result = 30 + ((Math.round(blue) << 2) | (Math.round(green) << 1) | Math.round(red));
 
 				if (value === 2) {
